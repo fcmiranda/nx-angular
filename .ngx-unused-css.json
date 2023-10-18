@@ -1,0 +1,6 @@
+{
+  "path": "iu/components",
+  "ignore": [],
+  "cli": true,
+  "styleExt": "scss"
+}

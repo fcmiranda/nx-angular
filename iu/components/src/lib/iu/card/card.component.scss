@@ -1,0 +1,9 @@
+.boring {
+  color: red;
+}
+
+.card {
+  &__hello {
+    color: red;
+  }
+}

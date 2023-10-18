@@ -1,0 +1,56 @@
+{
+  "ignorePatterns": ["!**/*"],
+  "overrides": [
+    {
+      "files": ["*.ts"],
+      "plugins": ["eslint-plugin-import-helpers", "@angular-eslint"],
+      "extends": [
+        "plugin:@nx/angular",
+        "plugin:@angular-eslint/template/process-inline-templates"
+      ],
+      "rules": {
+        "import-helpers/order-imports": [
+          "warn",
+          {
+            "newlinesBetween": "always",
+            "groups": [
+              "module",
+              "/@angular/",
+              "/^@myngapp/",
+              "parent",
+              "sibling",
+              "index"
+            ],
+            "alphabetize": { "order": "asc", "ignoreCase": true }
+          }
+        ],
+        "@typescript-eslint/no-unused-vars": "error",
+        "@angular-eslint/directive-selector": [
+          "error",
+          {
+            "type": "attribute",
+            "prefix": "myngapp",
+            "style": "camelCase"
+          }
+        ],
+        "@angular-eslint/component-selector": [
+          "error",
+          {
+            "type": "element",
+            "prefix": "myngapp",
+            "style": "kebab-case"
+          }
+        ]
+      }
+    },
+    {
+      "files": ["*.html"],
+      "extends": ["plugin:@angular-eslint/template/recommended"],
+      "rules": {
+        "@angular-eslint/template/attributes-order": "error",
+        "@angular-eslint/template/no-duplicate-attributes": "error"
+      }
+    }
+  ],
+  "extends": ["./.eslintrc.base.json"]
+}
