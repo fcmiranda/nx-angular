@@ -1,5 +1,3 @@
-import { Component, Input, OnChanges, OnInit } from '@angular/core';
-
 // eslint-disable-next-line @angular-eslint/prefer-on-push-component-change-detection
 @Component({
   selector: 'myngapp-root',
@@ -8,11 +6,11 @@ import { Component, Input, OnChanges, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit, OnChanges {
   ngOnChanges(): void {
-    throw new Error('Method not implemented.');
+    throw new Error('Mtestehahahlemented.');
   }
 
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    throw new Error('Mtestehahahlemented.');
   }
 
   title = 'myngapp';

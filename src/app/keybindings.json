@@ -1,0 +1,25 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "ctrl ctrl",
+    "command": "workbench.action.focusActiveEditorGroup"
+  },
+  {
+    "key": "shift+ctrl+up",
+    "command": "editor.emmet.action.balanceOut"
+  },
+  {
+    "key": "shift+ctrl+down",
+    "command": "editor.emmet.action.balanceIn"
+  },
+  {
+    "key": "shift+cmd+pageup",
+    "command": "cursorTopSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+cmd+pagedown",
+    "command": "cursorBottomSelect",
+    "when": "textInputFocus"
+  }
+]
